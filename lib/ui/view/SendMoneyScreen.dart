@@ -92,6 +92,11 @@ class _SendMoneyScreenState extends State<SendMoneyScreen> {
               Padding(
                 padding: EdgeInsets.only(left: 45),
                   child: Text("Designated Bank")),
+      Theme(
+        data: Theme.of(context).copyWith(
+          canvasColor: Colors.white,
+        ),
+        child:
               DropdownButtonFormField<String>(
                 decoration: InputDecoration(
                   prefixIcon: Icon(Icons.house_siding_sharp,color: Colors.black54,),
@@ -111,13 +116,14 @@ class _SendMoneyScreenState extends State<SendMoneyScreen> {
                 ))
                     .toList(),
                 onChanged: (value) {},
-              ),
+              )),
               const SizedBox(height: 24),
               Padding(
                 padding: const EdgeInsets.only(left: 45),
                 child: const Text('Beneficiary Account Number')),
 
               TextFormField(
+                style: TextStyle(color: Color(0xFF0C2D57)),
                 decoration: InputDecoration(
                   hintText: '234567891',
                   prefixIcon: Icon(Icons.person, color: Colors.black54,),
@@ -133,6 +139,7 @@ class _SendMoneyScreenState extends State<SendMoneyScreen> {
               Align(
                 alignment: Alignment.centerRight,
                 child: Text('Sharafadeen Mubarak', style: TextStyle(
+                  color: Color(0xFF0C2D57)
               ))),
                Padding(
                  padding: const EdgeInsets.only(left: 45),
