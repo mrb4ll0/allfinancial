@@ -187,7 +187,8 @@ class _SendMoneyScreenState extends State<SendMoneyScreen> {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(backgroundColor: Color(0xFF0C2D57)),
+                  style: ElevatedButton.styleFrom(backgroundColor: Color(0xFF0C2D57),
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30))),
                   onPressed: () {},
                   child: const Row(
                     mainAxisAlignment: MainAxisAlignment.center,
